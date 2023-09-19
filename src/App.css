@@ -8,8 +8,8 @@
 }
 
 .card-container {
-  width: 400px;
-  padding: 20px;
+  width: 600px;
+  padding: 40px;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

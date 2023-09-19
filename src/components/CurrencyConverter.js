@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from "react";
 
+const centerDivStyle = {
+  display: "flex",
+  justifyContent: "center", // Horizontal centering
+  alignItems: "center", // Vertical centering
+};
+
 const CurrencyConverter = () => {
   const [currencies, setCurrencies] = useState({});
   const [amount, setAmount] = useState(1);
@@ -27,16 +33,17 @@ const CurrencyConverter = () => {
 
   return (
     <div>
-      <h1>Currency Converter</h1>
+      <h1 style={centerDivStyle}>Currency Converter</h1>
       <div>
-        <label> Enter The Amount to Convert: </label>
+        <section> Enter The Amount to Convert: </section>
         <input
           type="number"
           value={amount}
           onChange={(e) => setAmount(e.target.value)}
         />
         <br />
-        <label>FROM (select a Currency)</label>
+        <br />
+        <label>CONVERT FROM </label>
         <br />
         <select
           value={fromCurrency}
@@ -48,9 +55,10 @@ const CurrencyConverter = () => {
             </option>
           ))}
         </select>
+        <span>(select a Currency Type)</span>
         <br />
         <br />
-        <label>TO (select a Currency)</label>
+        <label>TO</label>
         <br />
         <select
           value={toCurrency}
@@ -62,13 +70,16 @@ const CurrencyConverter = () => {
             </option>
           ))}
         </select>
+        <span>(select a Currency Type)</span>
+
         <br />
         <button onClick={convertCurrency}>Convert</button>
       </div>
       <div>
+        <p>CONVERSION RESULT</p>
         {convertedAmount !== null && (
           <p>
-            {amount} {fromCurrency} is equal to {convertedAmount} {toCurrency}
+            {amount} {fromCurrency} = {convertedAmount} {toCurrency}
           </p>
         )}
       </div>
