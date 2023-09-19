@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Currency Converter App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Currency Converter App is a simple web application built with React that allows users to convert one currency to another using real exchange rate data.
 
-## Available Scripts
+![Currency Converter App Screenshot](screenshot.png)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Fetches currency exchange rate data from a JSON file.
+- Allows users to enter an amount, select a source currency, and select a target currency for conversion.
+- Performs currency conversion with real exchange rate data.
+- Displays the converted amount to the user.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository to your local machine:
 
-### `npm test`
+   ```shell
+   git clone https://github.com/ImpactConnect/Currency-Converter-App.git
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
 
-### `npm run build`
+1. Enter the amount you want to convert in the input field.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Select the currency you want to convert from in the "From" dropdown.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Select the currency you want to convert to in the "To" dropdown.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Click the "Convert" button to see the converted amount.
 
-### `npm run eject`
+## Data Source
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Currency exchange rate data is fetched from a `db.json` file provided in the project.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technologies Used
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- React
+- JavaScript
+- HTML
+- CSS
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contributing
 
-## Learn More
+Contributions to the Currency Converter App are welcome! If you'd like to contribute, please follow these steps:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```shell
+   git checkout -b feature/my-feature
+   ```
 
-### Code Splitting
+3. Make your changes and commit them:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```shell
+   git commit -m "Add my feature"
+   ```
 
-### Analyzing the Bundle Size
+4. Push your changes to your fork:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   ```shell
+   git push origin feature/my-feature
+   ```
 
-### Making a Progressive Web App
+5. Create a pull request from your branch to the main repository.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   ```shell
+   You can use this code as-is and include it in your README.md file.
+   ```
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### Deployment
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Currency data source: Provided JSON file with real exchange rates.
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for using the Currency Converter App! If you have any questions or feedback, please feel free to contact us.
