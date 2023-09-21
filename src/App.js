@@ -7,7 +7,6 @@ function App() {
     <div className="App">
       <div className="card-container">
         {" "}
-        {/* Apply the card container style */}
         <CurrencyConverter />
       </div>
     </div>

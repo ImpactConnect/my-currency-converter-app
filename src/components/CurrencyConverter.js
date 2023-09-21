@@ -1,25 +1,26 @@
 import React, { useState, useEffect } from "react";
 
+// Display styling
 const centerDivStyle = {
   display: "flex",
-  justifyContent: "center", // Horizontal centering
-  alignItems: "center", // Vertical centering
+  justifyContent: "center",
+  alignItems: "center",
 };
-
+// initialize state variables using the useState
 const CurrencyConverter = () => {
   const [currencies, setCurrencies] = useState({});
   const [amount, setAmount] = useState(1);
   const [fromCurrency, setFromCurrency] = useState("USD");
   const [toCurrency, setToCurrency] = useState("EUR");
   const [convertedAmount, setConvertedAmount] = useState(null);
-
+  // Fetching data from API
   useEffect(() => {
     fetch("http://localhost:3000/currencies")
       .then((response) => response.json())
       .then((data) => setCurrencies(data))
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
-
+  // Conversion Function
   const convertCurrency = () => {
     if (fromCurrency === toCurrency) {
       setConvertedAmount(amount);
